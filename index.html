@@ -1,1 +1,368 @@
-Hai, Welcome to my website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Moonlit Pixel | Portfolio</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:#333;
+}
+
+/* Navbar */
+.navbar{
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.navbar-brand{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#ff4fa3 !important;
+}
+
+.nav-link{
+    font-weight:500;
+    color:#333 !important;
+    margin-left:15px;
+}
+
+.nav-link:hover{
+    color:#ff4fa3 !important;
+}
+
+/* Hero */
+.hero{
+    min-height:75vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(
+    135deg,
+    #fff 0%,
+    #ffe5f2 100%);
+}
+
+.hero h1{
+    font-size:3.5rem;
+    font-weight:700;
+}
+
+.hero span{
+    color:#ff4fa3;
+}
+
+.hero p{
+    max-width:650px;
+    margin:auto;
+    margin-top:15px;
+    color:#666;
+}
+
+.btn-pink{
+    background:#ff4fa3;
+    color:#fff;
+    border:none;
+    padding:12px 30px;
+}
+
+.btn-pink:hover{
+    background:#ff2f91;
+    color:#fff;
+}
+
+/* Section Title */
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-weight:700;
+    color:#ff4fa3;
+}
+
+/* About */
+.about{
+    padding:100px 0;
+}
+
+/* Projects */
+.projects{
+    padding:100px 0;
+    background:#fff5fa;
+}
+
+.project-card{
+    border:none;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.card-title{
+    color:#ff4fa3;
+    font-weight:600;
+}
+
+/* Contact */
+.contact{
+    padding:100px 0;
+}
+
+/* Footer */
+footer{
+    background:#ff4fa3;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+footer h5{
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg sticky-top">
+<div class="container">
+
+<a class="navbar-brand" href="#">
+Moonlit Pixel
+</a>
+
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#projects">Projects</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1>
+Hello, I'm <span>Moonlit Pixel</span>
+</h1>
+
+<p>
+Creative Web Designer & Developer passionate about building
+beautiful, responsive, and user-friendly websites.
+</p>
+
+<a href="#projects" class="btn btn-pink mt-4">
+View My Work
+</a>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about" class="about">
+
+<div class="container">
+
+<div class="section-title">
+<h2>About Me</h2>
+</div>
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+<img
+src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+class="img-fluid rounded shadow"
+alt="">
+</div>
+
+<div class="col-lg-6">
+
+<h3 class="mb-3">
+Who Am I?
+</h3>
+
+<p>
+I am a passionate web developer focused on creating
+modern, responsive, and visually appealing websites.
+My expertise includes HTML, CSS, Bootstrap, JavaScript,
+PHP, and MySQL.
+</p>
+
+<p>
+I enjoy transforming ideas into digital experiences
+that are both functional and elegant.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+
+<section id="projects" class="projects">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Projects</h2>
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card project-card shadow-sm h-100">
+<div class="card-body">
+<h5 class="card-title">Portfolio Website</h5>
+<p>
+Personal responsive portfolio built with Bootstrap.
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card project-card shadow-sm h-100">
+<div class="card-body">
+<h5 class="card-title">Library Management</h5>
+<p>
+PHP & MySQL based system for managing books and users.
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card project-card shadow-sm h-100">
+<div class="card-body">
+<h5 class="card-title">Online Voting System</h5>
+<p>
+Secure web-based voting platform with admin dashboard.
+</p>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="contact">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Contact Me</h2>
+</div>
+
+<div class="row justify-content-center">
+
+<div class="col-lg-8">
+
+<form>
+
+<div class="mb-3">
+<input type="text"
+class="form-control"
+placeholder="Your Name">
+</div>
+
+<div class="mb-3">
+<input type="email"
+class="form-control"
+placeholder="Your Email">
+</div>
+
+<div class="mb-3">
+<textarea rows="5"
+class="form-control"
+placeholder="Your Message"></textarea>
+</div>
+
+<button class="btn btn-pink">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<h5>Moonlit Pixel</h5>
+<p class="mb-0">
+josyjo312.github.io
+</p>
+
+<p class="mb-0">
+© 2026 Moonlit Pixel. All Rights Reserved.
+</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
